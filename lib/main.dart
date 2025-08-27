@@ -38,25 +38,71 @@ class eraasoft extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Dr. Sayed Abdul-Aziz',
-                        style:
-                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Dr. Sayed Abdul-Aziz',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Eye Special',
+                            style: TextStyle(color: Colors.blueGrey)),
+                        SizedBox(height: 5),
+                        Row(
+                          children: [
+                            Icon(Icons.star, color: Colors.orange, size: 20),
+                            Text("3"),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            ElevatedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.phone, color: Colors.white),
+                    label: Text(
+                      "1",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:Color.fromARGB(255, 129, 193, 242),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
                       ),
-                      SizedBox(height: 5),
-                      Text('Eye Special',
-                          style: TextStyle(color: Colors.blueGrey)),
-                      SizedBox(height: 5),
-                      Row(
-                        children: [
-                          Icon(Icons.star, color: Colors.orange, size: 20),
-                          Text("3"),
-                        ],
+                    ),
+                  ),
+                  SizedBox(width: 10),
+
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.phone, color: Colors.white),
+                    label: Text(
+                      "2",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 129, 193, 242),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
                       ),
-                    ],
+                    ),
+                  ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -73,132 +119,144 @@ class eraasoft extends StatelessWidget {
               SizedBox(height: 20),
               Column(
                 children: [
-              Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Color(0xffe4f2fd),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    Row(
+                  Container(
+                    padding: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Color(0xffe4f2fd),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
                       children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.local_hospital, color: Colors.white),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child: Icon(Icons.local_hospital,
+                                  color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('Cleopatra Hospital',
+                                style: TextStyle(fontSize: 17.6)),
+                          ],
                         ),
-                        SizedBox(width: 10),
-                        Text('Cleopatra Hospital',
-                            style: TextStyle(fontSize: 17.6)),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child: Icon(Icons.access_time, color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('10-19', style: TextStyle(fontSize: 17.6)),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child:
+                                  Icon(Icons.location_on, color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('2 Gamaa street, Giza',
+                                style: TextStyle(fontSize: 17.6)),
+                          ],
+                        ),
                       ],
                     ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.access_time, color: Colors.white),
-                        ),
-                        SizedBox(width: 10),
-                        Text('10-19',style: TextStyle(fontSize: 17.6)),
-                      ],
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.location_on, color: Colors.white),
-                        ),
-                        SizedBox(width: 10),
-                        Text('2 Gamaa street, Giza',
-                            style: TextStyle(fontSize: 17.6)),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Divider(
-                color: Colors.grey,
-                thickness: 2,
-              ),
-                SizedBox(height: 20),
-              Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Color(0xffe4f2fd),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.email, color: Colors.white),
-                        ),
-                        SizedBox(width: 10),
-                        Text('dr@6.com',
-                            style: TextStyle(fontSize: 17.6)),
-                      ],
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.phone, color: Colors.white),
-                        ),
-                        SizedBox(width: 10),
-                        Text('01026384619',style: TextStyle(fontSize: 17.6)),
-                      ],
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          child: Icon(Icons.phone, color: Colors.white),
-                        ),
-                        SizedBox(width: 10),
-                        Text('01165387981',
-                            style: TextStyle(fontSize: 17.6)),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 25),
-              ElevatedButton.icon(onPressed: (){},
-               icon: Icon(Icons.chat, color: Colors.white), 
-                label: Text("Chat With Dr. Sayed",
-                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
-                 ),
-                  style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xfff4cb050),
-                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
                   ),
-                ),
-              ),
-                SizedBox(height: 15),
-              ElevatedButton(onPressed: (){}, child: 
-                Text('Book Appointment', style: TextStyle(fontSize: 18, color: Colors.white) ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xfff265ed7),
-                  padding: EdgeInsets.symmetric(horizontal: 90, vertical: 15),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
+                  Divider(
+                    color: Colors.grey,
+                    thickness: 2,
                   ),
-                ),
+                  SizedBox(height: 20),
+                  Container(
+                    padding: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Color(0xffe4f2fd),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child: Icon(Icons.email, color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('dr@6.com',
+                                style: TextStyle(fontSize: 17.6)),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child: Icon(Icons.phone, color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('01026384619',
+                                style: TextStyle(fontSize: 17.6)),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueAccent,
+                              child: Icon(Icons.phone, color: Colors.white),
+                            ),
+                            SizedBox(width: 10),
+                            Text('01165387981',
+                                style: TextStyle(fontSize: 17.6)),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 25),
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.chat, color: Colors.white),
+                    label: Text(
+                      "Chat With Dr. Sayed",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff4cb050),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 80, vertical: 15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 15),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Book Appointment',
+                        style: TextStyle(fontSize: 18, color: Colors.white)),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff265ed7),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 90, vertical: 15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                    ),
+                  )
+                ],
               )
-                ]
-              )              
             ],
           ),
         ),
-      )    
+      ),
     );
   }
 }
